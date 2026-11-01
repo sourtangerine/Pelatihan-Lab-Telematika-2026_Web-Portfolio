@@ -36,7 +36,7 @@
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/70 dark:border-slate-800 transition-colors duration-200">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#home" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                 Bimo<span class="text-blue-600">.P250</span>
             </a>
@@ -62,7 +62,7 @@
     </header>
 
     <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-6 space-y-16 py-8">
+    <main class="max-w-5xl mx-auto px-6 space-y-16 py-8">
 
         <!-- Home Section -->
         <section id="home" class="pt-8 pb-12 border-b border-slate-200/70 dark:border-slate-800">
@@ -96,133 +96,165 @@
 
         <!-- About Section -->
         <section id="about" class="pb-16 border-b border-slate-200/70 dark:border-slate-800">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
-                About Me
-            </h2>
-            <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)]">
-                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-                    I am a Computer Engineering Student with a passion for Machine Learning and Data Science. I enjoy exploring the intricacies of software and hardware systems, and I am constantly seeking to expand my knowledge in these areas.
-                </p>
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <!-- Title (Left) -->
+                <div class="w-full md:w-48 lg:w-56 flex-shrink-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3 md:sticky md:top-24">
+                        <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                        About Me
+                    </h2>
+                </div>
+                <!-- Content (Right) -->
+                <div class="flex-1 min-w-0 w-full">
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)]">
+                        <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+                            I am a Computer Engineering Student with a passion for Machine Learning and Data Science. I enjoy exploring the intricacies of software and hardware systems, and I am constantly seeking to expand my knowledge in these areas.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="pb-16 border-b border-slate-200/70 dark:border-slate-800">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
-                Skills
-            </h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">HTML</span>
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">CSS</span>
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">C++</span>
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Python</span>
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">SQL</span>
-                <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Microsoft Fabric</span>
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <!-- Title (Left) -->
+                <div class="w-full md:w-48 lg:w-56 flex-shrink-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3 md:sticky md:top-24">
+                        <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                        Skills
+                    </h2>
+                </div>
+                <!-- Content (Right) -->
+                <div class="flex-1 min-w-0 w-full">
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">HTML</span>
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">CSS</span>
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">C++</span>
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Python</span>
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">SQL</span>
+                        <span class="px-4 py-2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:border-blue-500/60 dark:hover:border-blue-400 hover:bg-blue-50/70 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Microsoft Fabric</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="pb-16 border-b border-slate-200/70 dark:border-slate-800">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
-                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
-                Projects
-            </h2>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
-                <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-6 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 01</span>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                            <a href="https://github.com/sourtangerine/Pelatihan-Lab-Telematika-2026_Web-Portfolio" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 1: Personal Portfolio Website</a>
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A personal portfolio website showcasing my skills, projects, and contact information.</p>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                        <a href="https://github.com/sourtangerine/Pelatihan-Lab-Telematika-2026_Web-Portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Repository</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-                <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-6 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 02</span>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                            <a href="https://github.com/sourtangerine/After_Dark" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 2: After Dark</a>
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A simple turn-based role-playing game developed using C++ and SFML.</p>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                        <a href="https://github.com/sourtangerine/After_Dark" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Repository</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-                <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-6 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 03</span>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                            <a href="https://github.com/sourtangerine/volt-logic-ui" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 3: Volt-Logic</a>
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A machine learning-based predictive screening system designed to support battery quality assessment during the manufacturing process.</p>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                        <a href="https://github.com/sourtangerine/volt-logic-ui" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Repository</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <!-- Title (Left) -->
+                <div class="w-full md:w-48 lg:w-56 flex-shrink-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3 md:sticky md:top-24">
+                        <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                        Projects
+                    </h2>
+                </div>
+                <!-- Content (Right) -->
+                <div class="flex-1 min-w-0 w-full">
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0">
+                        <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 01</span>
+                                <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                                    <a href="https://github.com/sourtangerine/Pelatihan-Lab-Telematika-2026_Web-Portfolio" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 1: Personal Portfolio Website</a>
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A personal portfolio website showcasing my skills, projects, and contact information.</p>
+                            </div>
+                            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                <a href="https://github.com/sourtangerine/Pelatihan-Lab-Telematika-2026_Web-Portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Repository</span>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 02</span>
+                                <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                                    <a href="https://github.com/sourtangerine/After_Dark" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 2: After Dark</a>
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A simple turn-based role-playing game developed using C++ and SFML.</p>
+                            </div>
+                            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                <a href="https://github.com/sourtangerine/After_Dark" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Repository</span>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] hover:border-blue-400/80 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2 inline-block">Project 03</span>
+                                <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                                    <a href="https://github.com/sourtangerine/volt-logic-ui" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Project 3: Volt-Logic</a>
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A machine learning-based predictive screening system designed to support battery quality assessment during the manufacturing process.</p>
+                            </div>
+                            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                <a href="https://github.com/sourtangerine/volt-logic-ui" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 hover:scale-105 active:scale-95">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Repository</span>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Contacts Section -->
         <section id="contacts" class="pb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
-                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
-                Contact Me!
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
-                    <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Email</span>
-                    <p class="m-0">
-                        <a href="mailto:bimoktsr229@gmail.com" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">bimoktsr229@gmail.com</a>
-                    </p>
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <!-- Title (Left) -->
+                <div class="w-full md:w-48 lg:w-56 flex-shrink-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3 md:sticky md:top-24">
+                        <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                        Contact Me!
+                    </h2>
                 </div>
-                <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
-                    <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Github</span>
-                    <p class="m-0">
-                        <a href="https://github.com/sourtangerine" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">sourtangerine</a>
-                    </p>
-                </div>
-                <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
-                    <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">LinkedIn</span>
-                    <p class="m-0">
-                        <a href="https://www.linkedin.com/in/bimo-kautsar-wardhana/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">Bimo Wardhana</a>
-                    </p>
-                </div>
-                <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
-                    <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">TikTok</span>
-                    <p class="m-0">
-                        <a href="https://tiktok.com/@lpislzl" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">@lpislzl</a>
-                    </p>
+                <!-- Content (Right) -->
+                <div class="flex-1 min-w-0 w-full">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Email</span>
+                            <p class="m-0">
+                                <a href="mailto:bimoktsr229@gmail.com" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">bimoktsr229@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Github</span>
+                            <p class="m-0">
+                                <a href="https://github.com/sourtangerine" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">sourtangerine</a>
+                            </p>
+                        </div>
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">LinkedIn</span>
+                            <p class="m-0">
+                                <a href="https://www.linkedin.com/in/bimo-kautsar-wardhana/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">Bimo Wardhana</a>
+                            </p>
+                        </div>
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800 shadow-[0_2px_12px_-2px_rgba(15,23,42,0.04)] flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">TikTok</span>
+                            <p class="m-0">
+                                <a href="https://tiktok.com/@lpislzl" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-slate-200/80 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xs inline-block">@lpislzl</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
