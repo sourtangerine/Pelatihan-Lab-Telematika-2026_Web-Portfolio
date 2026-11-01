@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimo Kautsar Wardhana || Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#2563eb',
+                            dark: '#111827',
+                            grey: '#6b7280',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        // Check initial theme to prevent flash of unstyled content (FOUC)
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 transition-colors duration-200">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-tight text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                Bimo<span class="text-blue-600">.</span>
+            </a>
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="#about" class="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95">About</a>
+                <a href="#skills" class="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95">Skills</a>
+                <a href="#projects" class="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95">Projects</a>
+                <a href="#contacts" class="px-3.5 py-1.5 text-sm font-medium bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm hover:shadow">Contacts</a>
+
+                <!-- Dark / Light Mode Toggle Button -->
+                <button id="theme-toggle" type="button" aria-label="Toggle theme" class="p-2 ml-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 border border-gray-200 dark:border-gray-700">
+                    <!-- Sun Icon (Shown in Dark Mode) -->
+                    <svg id="theme-toggle-light-icon" class="w-4 h-4 hidden text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <!-- Moon Icon (Shown in Light Mode) -->
+                    <svg id="theme-toggle-dark-icon" class="w-4 h-4 hidden text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 space-y-16 py-8">
+
+        <!-- Home Section -->
+        <section id="home" class="text-center pt-8 pb-12 border-b border-gray-200 dark:border-gray-800">
+            <p class="inline-block px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900 rounded-full mb-6">
+                Computer Engineering Student
+            </p>
+            <div class="flex justify-center mb-6">
+                <img src="images/profile.jpg" alt="Bimo Kautsar Wardhana" width="200" height="200" class="w-48 h-48 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-xl ring-4 ring-gray-200 dark:ring-gray-700">
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-black dark:text-white tracking-tight mb-3">
+                Bimo Kautsar Wardhana
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-xl mx-auto font-normal">
+                Interested in Machine Learning and Data Science.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#projects" class="px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-blue-700 transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow">
+                    View Projects
+                </a>
+                <a href="#contacts" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 hover:scale-105 active:scale-95">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="pb-16 border-b border-gray-200 dark:border-gray-800">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-6 flex items-center gap-3">
+                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                About Me
+            </h2>
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 sm:p-8 border border-gray-200 dark:border-gray-800 shadow-sm">
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
+                    I am a Computer Engineering Student with a passion for Machine Learning and Data Science. I enjoy exploring the intricacies of software and hardware systems, and I am constantly seeking to expand my knowledge in these areas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="pb-16 border-b border-gray-200 dark:border-gray-800">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-6 flex items-center gap-3">
+                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                Skills
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">HTML</span>
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">CSS</span>
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">C++</span>
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Python</span>
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">SQL</span>
+                <span class="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105 cursor-pointer">Microsoft Fabric</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="pb-16 border-b border-gray-200 dark:border-gray-800">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-8 flex items-center gap-3">
+                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                Projects
+            </h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
+                <li class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 inline-block">Project 01</span>
+                        <h3 class="text-lg font-bold text-black dark:text-white mb-2">Project 1: Personal Portfolio Website</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A personal portfolio website showcasing my skills, projects, and contact information.</p>
+                    </div>
+                </li>
+                <li class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 inline-block">Project 02</span>
+                        <h3 class="text-lg font-bold text-black dark:text-white mb-2">Project 2: After Dark</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A simple turn-based role-playing game developed using C++ and SFML.</p>
+                    </div>
+                </li>
+                <li class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 inline-block">Project 03</span>
+                        <h3 class="text-lg font-bold text-black dark:text-white mb-2">Project 3: Volt-Logic</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A machine learning-based predictive screening system designed to support battery quality assessment during the manufacturing process.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="pb-16">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-8 flex items-center gap-3">
+                <span class="w-2 h-7 bg-blue-600 rounded-full inline-block"></span>
+                Contact Me
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm flex items-center justify-between">
+                    <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">Email</span>
+                    <p class="m-0">
+                        <a href="mailto:bimoktsr229@gmail.com" class="px-3.5 py-1.5 bg-gray-50 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm inline-block">bimoktsr229@gmail.com</a>
+                    </p>
+                </div>
+                <div class="p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm flex items-center justify-between">
+                    <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">Github</span>
+                    <p class="m-0">
+                        <a href="https://github.com/sourtangerine" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-gray-50 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm inline-block">sourtangerine</a>
+                    </p>
+                </div>
+                <div class="p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm flex items-center justify-between">
+                    <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">LinkedIn</span>
+                    <p class="m-0">
+                        <a href="https://www.linkedin.com/in/bimo-kautsar-wardhana/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-gray-50 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm inline-block">Bimo Wardhana</a>
+                    </p>
+                </div>
+                <div class="p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm flex items-center justify-between">
+                    <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">TikTok</span>
+                    <p class="m-0">
+                        <a href="https://tiktok.com/@lpislzl" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-gray-50 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-white text-sm font-medium rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm inline-block">@lpislzl</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-center text-xs text-gray-500 dark:text-gray-400 transition-colors duration-200">
+        <p>&copy; 2026 Bimo Kautsar Wardhana. All rights reserved.</p>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        function updateToggleIcons() {
+            if (document.documentElement.classList.contains('dark')) {
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            } else {
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            }
+        }
+
+        // Set initial icon state
+        updateToggleIcons();
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            updateToggleIcons();
+        });
+    </script>
+
+</body>
+</html>
